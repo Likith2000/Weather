@@ -16,7 +16,7 @@ app.post("/", function (req, res) {
     if (unit === "imperial") {
         units = "°Farhenheit";
     }
-    const apiKey = "7d66b418e41615c4cb16686018485fc8";
+    const apiKey = "";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&units=" + unit + "&appid=" + apiKey;
     https.get(url, function (response) {
         response.on("data", function (data) {
